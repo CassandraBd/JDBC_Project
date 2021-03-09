@@ -17,6 +17,7 @@ public class TextConnection {
         String url = "jdbc:oracle:thin:@18.234.188.248:1521:XE";
         try {
             Connection con = DriverManager.getConnection(url, "hr", "hr");
+
             System.out.println("CONNECTION SUCCESSFUL");
         }catch (SQLException e){
             System.out.println("CONNECTION HAS FAILED"+ e.getMessage());
