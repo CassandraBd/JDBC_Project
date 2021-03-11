@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class TextConnection {
+public class TestConnection {
 
     public static void main(String[] args) {
 
@@ -19,9 +19,12 @@ public class TextConnection {
             Connection con = DriverManager.getConnection(url, "hr", "hr");
 
             System.out.println("CONNECTION SUCCESSFUL");
+            con.close();
+
         }catch (SQLException e){
             System.out.println("CONNECTION HAS FAILED"+ e.getMessage());
         }
+
 
     }
 }
