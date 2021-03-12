@@ -21,8 +21,34 @@ public class UtilityRun {
 
         int totalRow = DB_Utility.getRowCount();
         System.out.println("totalRow = " + totalRow);
-        
-        
+        int totalColumn = DB_Utility.getColumnCount();
+        System.out.println("totalColumn = " + totalColumn);
+
+        System.out.println("DB_Utility.getAllColumnNamesAsList() = "
+                + DB_Utility.getAllColumnNamesAsList());
+
+        System.out.println("DB_Utility.getAllColumnNamesAsList(3) = " +
+                DB_Utility.getRowDataAsList(3));
+
+        System.out.println("DB_Utility.getCellValue(3,2) = " + DB_Utility.getCellValue(3,2));
+
+        System.out.println("DB_Utility.getCellValue(3, \"REGION_NAME\") = "
+                + DB_Utility.getCellValue(3, "REGION_NAME"));
+
+     //   System.out.println("Right now we are at Row " + result.getRow());
+
+        System.out.println("DB_Utility.getColumnDataAsList(2) = " +DB_Utility.getColumnDataAsList(2));
+
+        System.out.println("DB_Utility.getColumnDataAsList(\"REGION_NAME\") = "
+                + DB_Utility.getColumnDataAsList("REGION_NAME"));
+
+      //  DB_Utility.displayAllData();
+        System.out.println("DB_Utility.getRowMap(3) = "
+                + DB_Utility.getRowMap(3));
+
+        System.out.println("DB_Utility.getAllRowAsListOfMap() = "
+                + DB_Utility.getAllRowAsListOfMap());
+
         DB_Utility.destroy();
 
     }

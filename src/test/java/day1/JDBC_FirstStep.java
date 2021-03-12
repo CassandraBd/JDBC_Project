@@ -5,7 +5,7 @@ import java.sql.*;
 public class JDBC_FirstStep {
     public static void main(String[] args) {
 
-        String url = "jdbc:oracle:thin:@18.234.188.248:1521:XE";
+        String url = "jdbc:oracle:thin:@ 3.85.213.97:1521:XE";
         try {
             Connection con = DriverManager.getConnection(url, "hr", "hr");
             // This way creating statement object, allows us to moe forward and backward easily
